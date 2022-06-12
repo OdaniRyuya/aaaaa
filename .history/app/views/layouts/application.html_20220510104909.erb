@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <%= render "shared/head" %>
+</head>
+
+<body>
+  <%= render "shared/header" %>
+  <%= yield %>
+  <%= render "shared/footer" %>
+  <%= javascript_include_tag 'application' %>
+</body>
+<p></p>
+
+</html>

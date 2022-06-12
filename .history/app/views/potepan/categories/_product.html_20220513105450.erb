@@ -1,0 +1,13 @@
+<div class="col-sm-4 col-xs-12">
+  <div class="productBox">
+    <div class="productImage clearfix">
+      <%= image_tag(image.attachment(:small)) %>
+    </div>
+    <div class="productCaption clearfix">
+      <a href="single_product.html">
+        <h5><%= product.name %></h5>
+      </a>
+      <h3><%= product.display_price %></h3>
+    </div>
+  </div>
+</div>

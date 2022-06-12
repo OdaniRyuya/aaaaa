@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <%= render "shared/head" %>
+  </head>
+
+  <body>
+    <%= render "shared/header" %>
+    <%= yield %>
+    <%= render "shared/footer" %>
+    <%= render "shared/login_modal" %>
+    <%= render "shared/sign_up_modal" %>
+
+    <%= javascript_include_tag :application %>
+  </body>
+
+</html>
