@@ -1,0 +1,2 @@
+class PotepansController < ApplicationController
+end

@@ -1,0 +1,2 @@
+namespace :loader do
+end

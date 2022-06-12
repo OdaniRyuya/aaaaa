@@ -1,0 +1,25 @@
+require 'rails_helper'
+
+RSpec.describe ApplicationHelper, type: :helper do
+  describe '#full_title' do
+    subject { full_title(str) }
+
+    context "文字列が入っている" do
+      let(:str) { 'test' }
+
+      it { is_expected.to eq 'test - BIGBAG Store' }
+    end
+
+    context "空の文字列が入っている" do
+      let(:str) { '' }
+
+      it { is_expected.to eq 'BIGBAG Store' }
+    end
+
+    context "nilが入っている" do
+      let(:str) { nil }
+      
+      it { is_expected.to eq 'BIGBAG Store' }
+    end
+  end
+end
